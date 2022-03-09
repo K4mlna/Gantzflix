@@ -13,12 +13,13 @@
     
 </head>
 
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
     <header class="flex h-screen">
         <section>
         <img src="assets/images/GantzFilm.jpg" class=" absolute z-0 object-cover w-screen h-screen">
-        <div class="absolute bg-gradient-to-b from-black w-screen h-64"></div>
+        <div class="fixed bg-gradient-to-b from-black w-screen h-64"></div>
         <div class="bottom-0 absolute bg-gradient-to-t from-black w-screen h-64"></div>
+        <div class="bottom-0 fixed bg-gradient-to-t from-black w-screen h-[10rem]"></div>
         </section>
         <nav class="fixed pl-10 w-screen h-32 flex flex-row justify-center xl:justify-start ">
 
@@ -38,35 +39,33 @@
                 </div>
             </div>
 
-            
+            <section class="invisible xl:visible w-92 h-32 mr-20 text-2xl flex flex-row items-center absolute right-0 space-x-10">
+                <button class="text-white transition duration-300 hover:text-zinc-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-gift"></i></button>
+                <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-bell"></i></button>
+                <div class="flex flex-row space-x-2 text-xl">
+                    <img src="assets/images/gantzpp.png" class="cursor-pointer hover:brightness-75 transition duration-300ms rounded-xl w-12 h-12 border-white border-2 ">
+                    <button class="text-white transition duration-300 hover:text-zinc-300"  ><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </section>
             
 
         </nav>
 
-        <section class="invisible xl:visible w-92 h-32 mr-20 text-2xl flex flex-row items-center absolute right-0 space-x-10">
-            <button class="text-white transition duration-300 hover:text-zinc-300"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-gift"></i></button>
-            <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-bell"></i></button>
-            <div class="flex flex-row space-x-2 text-xl">
-                <img src="assets/images/gantzpp.png" class="cursor-pointer hover:brightness-75 transition duration-300ms rounded-xl w-12 h-12 border-white border-2 ">
-                <button class="text-white transition duration-300 hover:text-zinc-300"  ><i class="fa-solid fa-chevron-down"></i></button>
-            </div>
-        </section>
+        
 
-        <section class="h-[27rem] w-[43rem] absolute top-[15rem] left-[3rem]">
+        <section class="h-[27rem] w-[20rem] sm:w-[28rem] md:w-[36rem] xl:w-[42.8rem] absolute top-[15rem] left-[0.5rem] sm:left-[3rem]">
             <div class="flex items-center text-2xl">
                 <img src="assets/images/Gantzlogo.png" class="w-[4rem]">
                 <span class="text-black tracking-[0.35rem] " >SERIES</span>
                 
             </div>
 
-            <span class="text-9xl font-black text-white tracking-wider">GANTZ: O</span>
+            <span class="text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-black text-white tracking-wider">GANTZ: O</span>
 
-            <p class="text-xl font-normal text-white">After being brutally murdered in a subway station, a teen boy awakens to find</p>
-                 <p class="text-xl font-normal text-white mt-2">himself resurrected by a strange computer named Gantz, and forced to fight a</p>
-                  <p class="text-xl font-normal text-white mt-2">large force of invading aliens in Osaka.</p>
+            <p class="text-xl font-normal text-white">After being brutally murdered in a subway station, a teen boy awakens to find himself resurrected by a strange computer named Gantz, and forced to fight a large force of invading aliens in Osaka.</p>
 
-            <div class=" text-xl font-normal text-white mt-[4rem] space-x-[0.5rem]">
+            <div class=" text-xl font-normal text-white mt-[2rem] space-x-[0.5rem]">
                 <button class=" text-black pr-8 pl-8 pt-[0.3rem] pb-[0.3rem] border-2 rounded-xl bg-white border-none transition hover:bg-zinc-300 duration-300"> <i class="fa-solid fa-play "></i> Play</button>
                 <button class="bg-red-500/50 text-white pr-8 pl-8 pt-[0.3rem] pb-[0.3rem] border-2 rounded-xl border-white transition hover:bg-zinc-500/50 duration-500"> <i class="fa-solid fa-circle-info "></i> More Info</button>
             </div>
@@ -75,11 +74,130 @@
         </section> 
 
     </header>
-  <main>
+    <main class="w-screen overflow-x-hidden overflow-y-hidden">
+        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Gantz </span>
+            <div class="h-[1rem]"></div>
 
-  </main>
-  <bottom>
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/1.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/2.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/3.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/4.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/5.jpg"></a>
+                
 
-  </bottom>
+            </div>
+        </section>
+
+        
+
+        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Last Hero Inuyashiki</span>
+            <div class="h-[1rem]"></div>
+    
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/l1.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l2.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/l3.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l4.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l5.jpg"></a>
+                
+                
+    
+            </div>
+        </section>
+
+        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Gigant</span>
+            <div class="h-[1rem]"></div>
+    
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g1.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g2.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g3.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g4.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g5.jpg"></a>
+            </div>
+        </section>
+
+        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Gantz - spin-off</span>
+            <div class="h-[1rem]"></div>
+    
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/e1.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/e2.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg1.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg2.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg3.jpg"></a>
+            </div>
+        </section>
+
+        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Live adaptation</span>
+            <div class="h-[1rem]"></div>
+    
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzo.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm2.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm3.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm4.JPG"></a>
+                
+            </div>
+        </section>
+
+        <section class="pb-[10rem] w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Top 5 Oku's characters</span>
+            <div class="h-[1rem]"></div>
+    
+            <div class="w-[120rem] flex flex-row space-x-3 ">
+                
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[10.9rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/1.JPG">
+                    <img class=" rounded-r-xl w-[10.9rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c1.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[10.9rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/2.JPG">
+                    <img class=" rounded-r-xl w-[10.9rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c4.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[10.9rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/3.JPG">
+                    <img class=" rounded-r-xl w-[10.9rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c2.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[10.9rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/4.JPG">
+                    <img class=" rounded-r-xl w-[10.9rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c3.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[10.9rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/5.JPG">
+                    <img class=" rounded-r-xl w-[10.9rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c7.JPG">
+                    </div>
+                </a>
+            
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <bottom>
+
+    </bottom>
 </body>
 </html>
