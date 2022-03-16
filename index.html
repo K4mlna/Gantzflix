@@ -10,6 +10,12 @@
     <link href="favicon.png" rel="icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/30ea03bb64.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <style>
+        main section::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
     
 </head>
 
@@ -75,17 +81,25 @@
 
     </header>
     <main class="w-screen overflow-x-hidden overflow-y-hidden">
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gantz - Prelude </span>
+        <section class="scrolledsection w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
+            
+            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Prelude </span>
             <div class="h-[1rem]"></div>
 
-            <div class="w-[143rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/1.jpg"></a>
+            <div class="w-[234rem] flex flex-row space-x-3 ">
+                <div class="absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div class="absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="buttonright text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="ml-[3rem] rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/1.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/2.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/3.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/4.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/5.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/6.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/7.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/8.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/9.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/10.jpg"></a>
 
             </div>
         </section>
@@ -399,5 +413,6 @@
           
         </section>
     </footer>
+
 </body>
 </html>
