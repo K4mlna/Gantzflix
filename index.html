@@ -10,12 +10,14 @@
     <link href="favicon.png" rel="icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/30ea03bb64.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    
     <style>
         main section::-webkit-scrollbar {
             display: none;
         }
     </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     
 </head>
 
@@ -23,11 +25,13 @@
     <header class="flex h-screen">
         <section>
         <img src="assets/images/GantzFilm.jpg" class=" absolute z-0 object-cover w-screen h-screen">
-        <div class="fixed bg-gradient-to-b from-black w-screen h-64"></div>
+        <div class="fixed bg-gradient-to-b from-black w-screen h-[6rem]"></div>
+        <div class="transformnav hidden fixed bg-black w-screen h-[6rem] z-50"></div>
+        
         <div class="bottom-0 absolute bg-gradient-to-t from-black w-screen h-64"></div>
         
         </section>
-        <nav class="fixed pl-10 w-screen h-32 flex flex-row justify-center xl:justify-start z-50">
+        <nav class="fixed pl-10 w-screen h-[6rem] flex flex-row justify-center xl:justify-start z-50">
 
             
             <div class ="flex flex-row items-center pr-[2rem]">
@@ -45,7 +49,7 @@
                 </div>
             </div>
 
-            <section class="invisible xl:visible w-92 h-32 mr-20 text-2xl flex flex-row items-center absolute right-0 space-x-10">
+            <section class="invisible xl:visible w-92 h-[6rem] mr-20 text-2xl flex flex-row items-center absolute right-0 space-x-10">
                 <button class="text-white transition duration-300 hover:text-zinc-300"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-gift"></i></button>
                 <button class="text-white transition duration-300 hover:text-zinc-300" class=""><i class="fa-solid fa-bell"></i></button>
@@ -79,16 +83,18 @@
 
         </section> 
 
+        
+
     </header>
     <main class="w-screen overflow-x-hidden overflow-y-hidden">
-        <section class="scrolledsection w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
+        <section onmouseover="hover('.leftArrowbutton' , '.rightArrowbutton','.carousel')" class="carousel w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
             
-            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Prelude </span>
+            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Tomes</span>
             <div class="h-[1rem]"></div>
 
-            <div class="w-[234rem] flex flex-row space-x-3 ">
-                <div class="absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
-                <div class="absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="buttonright text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel', '.leftArrow')" class=" leftArrow absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="leftArrowbutton hidden text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel', '.rightArrow')" class=" rightArrow absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="rightArrowbutton hidden text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
 
                 <a href="#"><img class="ml-[3rem] rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/1.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/2.jpg"></a>
@@ -100,57 +106,79 @@
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/8.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/9.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/10.jpg"></a>
-
-            </div>
-        </section>
-
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gantz - Osaka </span>
-            <div class="h-[1rem]"></div>
-
-            <div class="w-[143rem] flex flex-row space-x-3 ">
-                
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/7.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/8.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/9.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/10.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/11.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/12.jpg"></a>
-
-            </div>
-        </section>
-
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gantz - Katastrophe </span>
-            <div class="h-[1rem]"></div>
-
-            <div class="w-[143rem] flex flex-row space-x-3 ">
-                
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/13.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/14.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/15.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/16.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/17.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantz/19.jpg"></a>
                 
 
             </div>
         </section>
 
-        
-
-        
-
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gantz - spin-off</span>
+        <section onmouseover="hover('.leftArrowbutton1' , '.rightArrowbutton1','.carousel1')" class="carousel1 w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
+            
+            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Tokyo Team</span>
             <div class="h-[1rem]"></div>
-    
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/e1.jpg"></a>
+
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel1', '.leftArrow1')" class=" leftArrow1 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="leftArrowbutton1 hidden text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel1', '.rightArrow1')" class=" rightArrow1 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="rightArrowbutton1 hidden text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="ml-[3rem] rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/1.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/2.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/3.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/4.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/zhunters/11.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/zhunters/6.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/7.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/zhunters/8.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/9.JPG"></a>
+                <a href="#"><img class=" rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zhunters/10.JPG"></a>
+                
+
+            </div>
+        </section>
+
+        <section onmouseover="hover('.leftArrowbutton3' , '.rightArrowbutton3','.carousel3')" class="carousel3 w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
+            
+            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Spin-off </span>
+            <div class="h-[1rem]"></div>
+
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel3', '.leftArrow3')" class=" leftArrow3 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="leftArrowbutton3 hidden text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel3', '.rightArrow3')" class=" rightArrow3 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="rightArrowbutton3 hidden text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="rounded-xl ml-[3rem] w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/e1.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/e2.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg1.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg2.jpg"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/gantzg3.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/6.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/7.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/8.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/9.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gantzext/10.JPG"></a>
+                
+
+            </div>
+        </section>
+
+        <section onmouseover="hover('.leftArrowbutton4' , '.rightArrowbutton4','.carousel4')" class="carousel4 w-screen flex flex-col space-y-[1rem] mt-[3rem] overflow-x-hidden overflow-x-scroll scroll-smooth">
+            
+            <span class="ml-[3rem] text-white text-2xl absolute font-black">Gantz - Katastrophe</span>
+            <div class="h-[1rem]"></div>
+
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel4', '.leftArrow4')" class=" leftArrow4 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton4 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel4', '.rightArrow4')" class=" rightArrow4 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton4 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="ml-[3rem] rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/1.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/2.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/3.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/4.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/5.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/6.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/7.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/8.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/9.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/zosaka/10.JPG"></a>
+
             </div>
         </section>
 
@@ -249,25 +277,36 @@
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[4rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Live adaptation</span>
+        <section onmouseover="hover('.leftArrowbutton5' , '.rightArrowbutton5','.carousel5')" class="carousel5 scroll-smooth w-screen flex flex-col space-y-[1rem] mt-[4rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Adaptations</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel5', '.leftArrow5')" class=" leftArrow5 absolute h-[45rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton5 text-white mt-[20rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel5', '.rightArrow5')" class=" rightArrow5 absolute h-[45rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton5 text-white mt-[20rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzo.JPG"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm.JPG"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm2.JPG"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm3.JPG"></a>
                 <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/gantzfilm4.JPG"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/6.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/7.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-top" src="assets/images/tomes/film/8.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-right" src="assets/images/tomes/film/9.jpg"></a>
+                <a href="#"><img class="rounded-xl w-[22.2rem] h-[45rem] object-cover object-center" src="assets/images/tomes/film/10.jpg"></a>
                 
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Top 5 Oku's characters</span>
+        <section onmouseover="hover('.leftArrowbutton6' , '.rightArrowbutton6','.carousel6')" class="carousel6 scroll-smooth w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Top 10 Oku's characters</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel6', '.leftArrow6')" class=" leftArrow6 absolute h-[16.2rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton6 text-white mt-[6rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel6', '.rightArrow6')" class=" rightArrow6 absolute h-[16.2rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton6 text-white mt-[6rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
                 
                 <a href="#">
                     <div class="flex">
@@ -303,73 +342,149 @@
                     <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/c7.JPG">
                     </div>
                 </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[11.1rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/6.JPG">
+                    <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/7.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[11.1rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/7.JPG">
+                    <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/6.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[11.1rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/8.JPG">
+                    <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/8.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[11.1rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/9.JPG">
+                    <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/9.JPG">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="flex">
+                    <img class=" rounded-l-xl w-[11.1rem] h-[16.2rem] object-right" src="assets/images/tomes/numbers/10.JPG">
+                    <img class=" rounded-r-xl w-[11.1rem] h-[16.2rem] object-cover" src="assets/images/tomes/gantzchar/10.JPG">
+                    </div>
+                </a>
             
                 
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black ">Last Hero Inuyashiki - Start over again</span>
+        <section onmouseover="hover('.leftArrowbutton7' , '.rightArrowbutton7','.carousel7')" class="carousel7 scroll-smooth w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black ">Last Hero Inuyashiki</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l1.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l2.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/l3.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l4.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l5.jpg"></a>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel7', '.leftArrow7')" class=" leftArrow7 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton7 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel7', '.rightArrow7')" class=" rightArrow7 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton7 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="randomimglast1 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/1.jpg"></a>
+                <a href="#"><img class="randomimglast2 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/2.jpg"></a>
+                <a href="#"><img class="randomimglast3 rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/3.jpg"></a>
+                <a href="#"><img class="randomimglast4 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/4.jpg"></a>
+                <a href="#"><img class="randomimglast5 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/5.jpg"></a>
+                <a href="#"><img class="randomimglast6 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/6.jpg"></a>
+                <a href="#"><img class="randomimglast7 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/7.jpg"></a>
+                <a href="#"><img class="randomimglast8 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/8.jpg"></a>
+                <a href="#"><img class="randomimglast9 rounded-xl w-[22.2rem] h-[12rem] object-cover" src="assets/images/tomes/last hero/9.jpg"></a>
+                <a href="#"><img class="randomimglast10 rounded-xl w-[22.2rem] h-[12rem] object-cover" src="assets/images/tomes/last hero/10.jpg"></a>
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Last Hero Inuyashiki - End my war</span>
+        <section onmouseover="hover('.leftArrowbutton8' , '.rightArrowbutton8','.carousel8')" class="carousel8 scroll-smooth w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Last Hero Inuyashiki - inside</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l6.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/last hero/l7.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/l8.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover" src="assets/images/tomes/last hero/l9.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover " src="assets/images/tomes/last hero/l10.jpg"></a>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel8', '.leftArrow8')" class=" leftArrow8 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton8 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel8', '.rightArrow8')" class=" rightArrow8 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton8 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="randomimglastinside1 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/1.jpg"></a>
+                <a href="#"><img class="randomimglastinside2 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/2.jpg"></a>
+                <a href="#"><img class="randomimglastinside3 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/3.jpg"></a>
+                <a href="#"><img class="randomimglastinside4 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/4.jpg"></a>
+                <a href="#"><img class="randomimglastinside5 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/5.jpg"></a>
+                <a href="#"><img class="randomimglastinside6 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/6.jpg"></a>
+                <a href="#"><img class="randomimglastinside7 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/7.jpg"></a>
+                <a href="#"><img class="randomimglastinside8 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/8.jpg"></a>
+                <a href="#"><img class="randomimglastinside9 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/9.jpg"></a>
+                <a href="#"><img class="randomimglastinside10 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidehero/10.png"></a>
+                
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gigant - The Beggining</span>
+        <section onmouseover="hover('.leftArrowbutton9' , '.rightArrowbutton9','.carousel9')" class="carousel9 scroll-smooth w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Gigant</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g1.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g2.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g3.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/g4.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/g5.jpg"></a>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel9', '.leftArrow9')" class=" leftArrow9 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton9 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel9', '.rightArrow9')" class=" rightArrow9 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton9 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="randomimggigant1 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/1.jpg"></a>
+                <a href="#"><img class="randomimggigant2 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/2.jpg"></a>
+                <a href="#"><img class="randomimggigant3 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/3.jpg"></a>
+                <a href="#"><img class="randomimggigant4 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/4.jpg"></a>
+                <a href="#"><img class="randomimggigant5 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/5.jpg"></a>
+                <a href="#"><img class="randomimggigant6 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/6.jpg"></a>
+                <a href="#"><img class="randomimggigant7 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/7.jpg"></a>
+                <a href="#"><img class="randomimggigant8 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/8.jpg"></a>
+                <a href="#"><img class="randomimggigant9 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/9.jpg"></a>
+                <a href="#"><img class="randomimggigant10 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/gigant/10.jpg"></a>
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
-            <span class="text-white text-2xl absolute font-black">Gigant - Enjoy the end</span>
+        <section onmouseover="hover('.leftArrowbutton10' , '.rightArrowbutton10','.carousel10')" class="carousel10 scroll-smooth w-screen flex flex-col space-y-[2rem] sm:space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+            <span class="text-white text-2xl absolute font-black">Gigant - Inside</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g6.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/g7.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/gigant/g8.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/gigant/g9.jpg"></a>
-                <a href="#"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/gigant/10.jpg"></a>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel10', '.leftArrow10')" class=" leftArrow10 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton10 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel10', '.rightArrow10')" class=" rightArrow10 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton10 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="#"><img class="randomimggigantinside1 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/1.JPG"></a>
+                <a href="#"><img class="randomimggigantinside2 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/2.JPG"></a>
+                <a href="#"><img class="randomimggigantinside3 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/3.JPG"></a>
+                <a href="#"><img class="randomimggigantinside4 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/4.JPG"></a>
+                <a href="#"><img class="randomimggigantinside5 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/5.JPG"></a>
+                <a href="#"><img class="randomimggigantinside6 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/6.JPG"></a>
+                <a href="#"><img class="randomimggigantinside7 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/7.JPG"></a>
+                <a href="#"><img class="randomimggigantinside8 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/8.JPG"></a>
+                <a href="#"><img class="randomimggigantinside9 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/9.JPG"></a>
+                <a href="#"><img class="randomimggigantinside10 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/insidegigant/10.JPG"></a>
             </div>
         </section>
 
-        <section class="w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
+        <section onmouseover="hover('.leftArrowbutton11' , '.rightArrowbutton11','.carousel11')" class="carousel11 scroll-smooth w-screen flex flex-col space-y-[1rem] mt-[3rem] ml-[3rem]  overflow-x-hidden overflow-x-scroll">
             <span class="text-white text-2xl absolute font-black">Best soundtrack</span>
             <div class="h-[1rem]"></div>
     
-            <div class="w-[120rem] flex flex-row space-x-3 ">
-                <a href="https://youtu.be/LAiao_sc-nE"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/Ost/1.JPG"></a>
-                <a href="https://youtu.be/77I8Hie1ruU"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/Ost/2.JPG"></a>
-                <a href="https://youtu.be/39rQjff0k5Q"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/Ost/3.JPG"></a>
-                <a href="https://youtu.be/0T49D73myWA"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/Ost/4.JPG"></a>
-                <a href="https://youtu.be/cQTcQ9Lbfj0"><img class="rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/5.JPG"></a>
+            <div class="w-[235.4rem] flex flex-row space-x-3 ">
+                <div onClick="leftScroll('.carousel11', '.leftArrow11')" class=" leftArrow11 absolute h-[12rem] w-[10rem] bg-gradient-to-r from-black z-30"><button class="hidden leftArrowbutton11 text-white mt-[4rem] ml-[2rem] text-6xl z-40"><i class="fa-solid fa-angle-left"></i></button></div>
+                <div onClick="rightScroll('.carousel11', '.rightArrow11')" class=" rightArrow11 absolute h-[12rem] w-[10rem] right-0 bg-gradient-to-l from-black z-30"><button class="hidden rightArrowbutton11 text-white mt-[4rem] ml-[5.2rem] text-6xl z-40"><i class="fa-solid fa-angle-right"></i></button></div>
+
+                <a href="https://youtu.be/LAiao_sc-nE"><img class="randomimgost1 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/Ost/1.JPG"></a>
+                <a href="https://youtu.be/77I8Hie1ruU"><img class="randomimgost2 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/Ost/2.JPG"></a>
+                <a href="https://youtu.be/39rQjff0k5Q"><img class="randomimgost3 rounded-xl w-[22.2rem] h-[12rem] object-cover object-top" src="assets/images/tomes/Ost/3.JPG"></a>
+                <a href="https://youtu.be/0T49D73myWA"><img class="randomimgost4 rounded-xl w-[22.2rem] h-[12rem] object-cover object-center" src="assets/images/tomes/Ost/4.JPG"></a>
+                <a href="https://youtu.be/cQTcQ9Lbfj0"><img class="randomimgost5 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/5.JPG"></a>
+                <a href="https://youtu.be/yM6-QVxIXTs"><img class="randomimgost6 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/6.JPG"></a>
+                <a href="https://www.youtube.com/watch?v=YiAb3FrrJXY"><img class="randomimgost7 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/7.JPG"></a>
+                <a href="https://youtu.be/6wDPlR7TL8o"><img class="randomimgost8 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/8.JPG"></a>
+                <a href="https://youtu.be/Tml9tPCcCCA"><img class="randomimgost9 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/9.JPG"></a>
+                <a href="https://youtu.be/spstCAOIzLU"><img class="randomimgost10 rounded-xl w-[22.2rem] h-[12rem] object-cover object-bottom" src="assets/images/tomes/Ost/10.JPG"></a>
             </div>
         </section>
 
@@ -413,6 +528,6 @@
           
         </section>
     </footer>
-
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
