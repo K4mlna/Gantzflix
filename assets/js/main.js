@@ -36,15 +36,27 @@ function hover(leftbutton, rightbutton, carouselindex){
 
 
 function random(classofimg, path){
+
+        var counter=[] 
  
         for (i=1; i<=10; i++){
-            randomnumber = Math.round(Math.random()*(10-1)+1)
+            var verify=false
+            var randomnumber = Math.round(Math.random()*(10-1)+1)
+            while (verify==false){
+                if (counter.includes(randomnumber)){
+                    randomnumber = Math.round(Math.random()*(10-1)+1)
+                }
+                else {
+                    verify=true
+                }
+            }
             var imagename = (classofimg + i.toString())
             var random1= document.querySelector(imagename)
             var randomimage1 = path + randomnumber.toString() + ".jpg"
             random1.src=randomimage1
-            
+            counter.push(randomnumber)
         }
+        console.log (counter)
 }
 
 random(".randomimglast","assets/images/tomes/last hero/")
@@ -57,9 +69,7 @@ const blacknavbar = document.querySelector(".transformnav");
 
 window.addEventListener('scroll', () => {
     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
-    
-    console.log(scrollTop, clientHeight, scrollHeight)
-    
+
     if (scrollTop >= 910){
         $(blacknavbar).show();
     }
