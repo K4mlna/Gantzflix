@@ -94,5 +94,33 @@ function videohover (videolocation, video){
     });
 }
 
-videohover('.mainhover','.videogantz1','.imgtoggle')
+function videohover2 (videolocation, video,img){
+    var videolocation =document.querySelector(videolocation)
+    var video =document.querySelector(video)
+    var image = document.querySelector(img)
+
+    videolocation.addEventListener('mouseenter', function (){
+        video.play()
+        $(video).show()
+        $(image).hide()
+    })
+    videolocation.addEventListener('mouseleave', function (){
+        video.pause()
+        $(video).hide()
+        $(image).show()
+    });
+}
+
+videohover('.mainhover','.videogantz1')
+videohover2('.carouselhoverimg2','.videogantz2',".hoverimg2")
+
+videohover2('.carouselhoverimg3','.videogantz3',".hoverimg3")
+videohover2('.carouselhoverimg4','.videogantz4',".hoverimg4")
+videohover2('.carouselhoverimg5','.videogantz5',".hoverimg5")
+videohover2('.carouselhoverimg6','.videogantz6',".hoverimg6")
+videohover2('.carouselhoverimg7','.videogantz7',".hoverimg7")
+videohover2('.carouselhoverimg8','.videogantz8',".hoverimg8")
+videohover2('.carouselhoverimg9','.videogantz9',".hoverimg9")
+videohover2('.carouselhoverimg10','.videogantz10',".hoverimg10")
+videohover2('.carouselhoverimg11','.videogantz11',".hoverimg11")
 
