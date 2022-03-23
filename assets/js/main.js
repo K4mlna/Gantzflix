@@ -78,3 +78,21 @@ window.addEventListener('scroll', () => {
     }
 })
 
+function videohover (videolocation, video){
+    var videolocation =document.querySelector(videolocation)
+    var video =document.querySelector(video)
+
+    //quand je hover videolocation img disparait et video apparait
+    //quand je dé hover videolocation img apparait et video disparait
+    videolocation.addEventListener('mouseenter', function (){
+        video.play()
+        $(video).show()
+    })
+    videolocation.addEventListener('mouseleave', function (){
+        video.pause()
+        $(video).hide()
+    });
+}
+
+videohover('.mainhover','.videogantz1','.imgtoggle')
+

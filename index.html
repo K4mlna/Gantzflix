@@ -22,13 +22,16 @@
 </head>
 
 <body class="bg-black overflow-x-hidden">
-    <header class="flex h-screen">
+    <header class="mainhover flex h-screen">
         <section>
-        <img src="assets/images/GantzFilm.jpg" class=" absolute z-0 object-cover w-screen h-screen">
-        <div class="fixed bg-gradient-to-b from-black w-screen h-[6rem]"></div>
+        <video loop="loop" class="videogantz1 hidden absolute w-screen h-screen object-cover z-0">
+            <source src="assets\videos\gantzzztrailer.mp4">
+        </video>
+        <img src="assets/images/GantzFilm.jpg" class="-z-10 absolute object-cover w-screen h-screen">
+        <div class="fixed bg-gradient-to-b from-black w-screen h-[6rem] z-50"></div>
         <div class="transformnav hidden fixed bg-black w-screen h-[6rem] z-50"></div>
         
-        <div class="bottom-0 absolute bg-gradient-to-t from-black w-screen h-64"></div>
+        <div class="bottom-0 absolute bg-gradient-to-t from-black w-screen h-[6rem]"></div>
         
         </section>
         <nav class="fixed pl-10 w-screen h-[6rem] flex flex-row justify-center xl:justify-start z-50">
@@ -67,7 +70,7 @@
         <section class="h-[27rem] w-[auto] sm:w-[28rem] md:w-[36rem] xl:w-[42.8rem] absolute top-[15rem] left-[1rem] sm:left-[3rem]">
             <div class="flex items-center text-2xl">
                 <img src="assets/images/Gantzlogo.png" class="w-[4rem]">
-                <span class="text-black tracking-[0.35rem] " >SERIES</span>
+                <span class="text-white tracking-[0.35rem] " >SERIES</span>
                 
             </div>
 
