@@ -124,5 +124,36 @@ videohover2('.carouselhoverimg9','.videogantz9',".hoverimg9")
 videohover2('.carouselhoverimg10','.videogantz10',".hoverimg10")
 videohover2('.carouselhoverimg11','.videogantz11',".hoverimg11")
 
+function hoverheader (hoverelem, newelement) {
+    let element = document.querySelector(newelement)
+    let hover = document.querySelector (hoverelem)
 
+    element.addEventListener("mouseenter", function (){
+        let a=0
+        $(hover).fadeIn(300)
+        
+    })
 
+    element.addEventListener("mouseleave", function (){
+        $(hover).fadeOut(250)
+    })
+}
+
+hoverheader (".hoverppappear", ".hoverpp")
+hoverheader (".hoverbellappear", ".bellhover")
+
+function hovertransitionchevron () {
+    let hover = document.querySelector(".chevrontransform")
+    let element = document.querySelector (".hoverpp")
+
+    element.addEventListener("mouseenter", function (){
+        $(hover).addClass('rotate-180')
+        
+    })
+
+    element.addEventListener("mouseleave", function (){
+        $(hover).removeClass('rotate-180')
+    })
+}
+
+hovertransitionchevron()
