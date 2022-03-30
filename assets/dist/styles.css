@@ -794,6 +794,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-auto {
+  cursor: auto;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1037,68 +1045,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'assets\/images\/gridcathegories\/determination\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/determination.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/despair\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/despair.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/death\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/death.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/emotion\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/emotion.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/alien\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/alien.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/weapons\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/weapons.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/gantai\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/gantai.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/Humanity\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/Humanity.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/mission\.jpg\'\)\] {
-  background-image: url('assets/images/gridcathegories/mission.jpg');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/poireau\.jpg\'\)\] {
-  background-image: url('assets/images/gridcathegories/poireau.jpg');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/rage\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/rage.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/romance\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/romance.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/superpower\.JPG\'\)\] {
-  background-image: url('assets/images/gridcathegories/superpower.JPG');
-}
-
-.bg-\[url\(\'assets\/images\/gridcathegories\/vampire\.jpg\'\)\] {
-  background-image: url('assets/images/gridcathegories/vampire.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/gridcathegories\/alien\.JPG\'\)\] {
-  background-image: url('./assets/images/gridcathegories/alien.JPG');
-}
-
-.bg-\[url\(\'\/assets\/images\/gridcathegories\/determination\.JPG\'\)\] {
-  background-image: url('/assets/images/gridcathegories/determination.JPG');
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/determination\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/determination.JPG');
 }
 
 .bg-\[url\(\'\/assets\/images\/gridcathegories\/despair\.JPG\'\)\] {
@@ -1151,6 +1099,58 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\'\/assets\/images\/gridcathegories\/vampire\.jpg\'\)\] {
   background-image: url('/assets/images/gridcathegories/vampire.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/despair\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/despair.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/death\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/death.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/emotion\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/emotion.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/alien\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/alien.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/weapons\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/weapons.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/gantai\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/gantai.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/Humanity\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/Humanity.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/mission\.jpg\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/mission.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/poireau\.jpg\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/poireau.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/rage\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/rage.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/romance\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/romance.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/superpower\.JPG\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/superpower.JPG');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/gridcathegories\/vampire\.jpg\'\)\] {
+  background-image: url('../../assets/images/gridcathegories/vampire.jpg');
 }
 
 .from-black {
